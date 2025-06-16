@@ -10,8 +10,8 @@ Incluye integración con **Azure Function** como herramienta.
 
 | Variable | Ejemplo | Descripción |
 |----------|---------|-------------|
-| `RESOURCE` | `bcp-foundry` | Nombre del recurso Azure AI Foundry |
-| `PROJECT`  | `agentes-bcp` | Nombre del AI Project |
+| `RESOURCE` | `proyecto-foundry` | Nombre del recurso Azure AI Foundry |
+| `PROJECT`  | `agentes-proyecto` | Nombre del AI Project |
 | `API_VER`  | `2025-05-15-preview` | Versión de la API (actual a jun-2025) |
 | `ENDPOINT` | `https://$RESOURCE.services.ai.azure.com/api/projects/$PROJECT` |
 | `KEY` / `TOKEN` | — | API Key (header `api-key`) **o** Bearer-token Entra ID |
@@ -34,7 +34,7 @@ Authorization: Bearer <TOKEN>
 ```python
 from azure.identity import DefaultAzureCredential
 cred = DefaultAzureCredential()        # usa Entra ID
-ENDPOINT = "https://bcp-foundry.services.ai.azure.com/api/projects/agentes-bcp"
+ENDPOINT = "https://proyecto-foundry.services.ai.azure.com/api/projects/agentes-proyecto"
 ```
 
 ---
@@ -243,7 +243,7 @@ Devuelve cada tool call, parámetros y respuestas.
 
 ---
 
-## 8. Buenas prácticas BCP
+## 8. Buenas prácticas proyecto
 
 1. **Versionar** cada `*.json` de agentes y herramientas en Git.
 2. **CI/CD** para aplicar POST/PATCH en Dev → QA → Prod.
