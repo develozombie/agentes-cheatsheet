@@ -1,4 +1,4 @@
-# 🧠 Azure AI Foundry – Cheat Sheet de Invocaciones REST y SDK
+# Azure AI Foundry Agents – Cheat Sheet de Invocaciones REST y SDK
 
 Guía rápida para el equipo sobre cómo **crear, invocar y orquestar agentes** de Azure AI Foundry usando  
 1) **API REST** y 2) **SDK oficial para Python** (`azure-ai-agents`).  
